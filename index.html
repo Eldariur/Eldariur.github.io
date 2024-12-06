@@ -25,35 +25,34 @@
     </section>
 
     <section id="popular-animes">
-        <h2>Animés Populaires</h2>
-        <div class="anime-list">
-            <div class="anime">
-                <h3>Attack on Titan (Shingeki no Kyojin)</h3>
-                <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan">
-                <p>L'humanité lutte contre des titans géants dans ce chef-d'œuvre épique.</p>
-            </div>
-            <div class="anime">
-                <h3>Naruto</h3>
-                <img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Naruto">
-                <p>Suivez Naruto dans sa quête pour devenir le plus grand ninja de son village.</p>
-            </div>
-            <div class="anime">
-                <h3>One Piece</h3>
-                <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="One Piece">
-                <p>Luffy et son équipage partent à la recherche du légendaire trésor One Piece.</p>
-            </div>
-            <div class="anime">
-                <h3>My Hero Academia</h3>
-                <img src="https://cdn.myanimelist.net/images/anime/10/78745.jpg" alt="My Hero Academia">
-                <p>Deku et ses amis dans une école de super-héros où ils apprennent à devenir des héros professionnels.</p>
-            </div>
-            <div class="anime">
-                <h3>Demon Slayer</h3>
-                <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
-                <p>Tanjiro combat les démons pour sauver sa sœur et venger sa famille.</p>
-            </div>
-        </div>    
-    </section>
+    <h2>Animés Populaires</h2>
+    <div class="anime-list">
+        <div class="anime" data-title="Attack on Titan" data-summary="L'humanité lutte contre des titans géants." data-seasons="4" data-episodes="87">
+            <h3>Attack on Titan (Shingeki no Kyojin)</h3>
+            <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan">
+        </div>
+        <div class="anime" data-title="Naruto" data-summary="Suivez Naruto dans sa quête pour devenir Hokage." data-seasons="5" data-episodes="220">
+            <h3>Naruto</h3>
+            <img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Naruto">
+        </div>
+        <div class="anime" data-title="One Piece" data-summary="Luffy et son équipage partent à la recherche du One Piece." data-seasons="20" data-episodes="1000+">
+            <h3>One Piece</h3>
+            <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="One Piece">
+        </div>
+    </div>
+</section>
+
+<!-- Fenêtre modale -->
+<div id="anime-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-summary"></p>
+        <p><strong>Nombre de saisons :</strong> <span id="modal-seasons"></span></p>
+        <p><strong>Nombre d'épisodes :</strong> <span id="modal-episodes"></span></p>
+    </div>
+</div>
+
     <section id="carousel">
     <h2>Découvrez des Animés</h2>
     <div class="carousel">
